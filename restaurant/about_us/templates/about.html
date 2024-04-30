@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block content %} 
+
+<div>
+    <div class="row mt-3 justify-content-center align-items-center">
+
+        <div class="col-md-6 col-lg-8 text-center">
+            <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt="image">
+        </div>
+
+        <div class="col-md-6 col-lg-4 justify-content-left">
+            <div class = "p-3">
+                <h3>About Us</h3>
+                <p>Nestled in the heart of Gazipur, our restaurant is more than just a place to dine; it's a culinary destination where flavors from around the world come alive. Our talented team of chefs draws inspiration from global cuisines to craft a diverse menu that caters to every palate. Join us on a culinary journey unlike any other. Discover the flavors, savor the moments, and create memories that will last a lifetime. Welcome to the Food Company family. Bon appétit!</p> 
+            <button class="btn btn-primary bg-primary text-white border-0">Contact Us</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content%}

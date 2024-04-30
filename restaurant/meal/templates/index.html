@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Show meal{% endblock title %}
+
+
+{% block content %} 
+
+<div class = "container text-center align-items-center my-5">
+    <h1>Meal Items</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for category in categories %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ category.strCategoryThumb }}" class="card-img-top" alt="{{ category.strCategory }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ category.strCategory }}</h5>
+                    <p class="card-text">{{ category.strCategoryDescription |  truncatewords:"10" }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content%}

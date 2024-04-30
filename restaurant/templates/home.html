@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block content %} 
+<div class = "container">
+    <div class="row d-flex mt-3 justify-content-center align-items-center">
+        <div class="col-sm-4 justify-content-end align-items-center">
+            <div>
+                <h3>Welcome to The Food Company!</h3>
+                <h5>Where culinary delight meets exceptional service!</h5>
+                <p>Step into our world of flavor and comfort, where every dish tells a story and every guest is cherished. From the moment you enter, you're enveloped in the warm ambiance of our restaurant, where the aroma of freshly prepared cuisine fills the air, and the sounds of laughter and clinking glasses create an atmosphere of conviviality.</p>
+            </div>
+        </div>
+        <div class="col-sm-8 text-center">
+            <img src="{% static 'images/intro.jpg' %}" alt="image">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
